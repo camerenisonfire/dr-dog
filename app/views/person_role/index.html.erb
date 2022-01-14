@@ -1,0 +1,11 @@
+<h1>Person Roles</h1>
+<ul>
+  <% @person_roles.each do |pr| %>
+    <% @person = Person.find(pr.person_id) %>
+    <% @role = Role.find(pr.role_id) %>
+
+    <li>
+      <%= @person.first_name + " " + @person.last_name + ": " + @role.description%>
+    </li>
+  <% end %>
+</ul>
