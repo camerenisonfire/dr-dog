@@ -1,24 +1,27 @@
-# README
+# Dr-Dog 🐶
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a veterinary portal. It is meant as a playground for practicing Ruby on Rails. 
 
-Things you may want to cover:
+### Getting Started
 
-* Ruby version
+To install dependencies
+```
+bundle install
+rails webpacker:install
+rails webpacker:install:react
+```
+and then start the server with
 
-* System dependencies
+```
+rails s
+```
 
-* Configuration
+Navigate to `localhost:3000/hello` to verify you see `Greetings: Hello from react-rails.` confirming React is working properly.
 
-* Database creation
+Note: Using [rbenv](https://github.com/rbenv/rbenv) and [nodenv](https://github.com/nodenv/nodenv) will assure you are using the correct Ruby and Node.
 
-* Database initialization
+### Notable Dependencies
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby 2.7.3
+* Ruby on Rails 7.0
+* [react-rails](https://github.com/reactjs/react-rails)
