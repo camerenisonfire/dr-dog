@@ -1,0 +1,12 @@
+<h1>Pet Owners</h1>
+
+<ul>
+  <% @pet_owners.each do |po| %>
+    <% @pet = Pet.find(po.pet_id) %>
+    <% @person = Person.find(po.person_id) %>
+
+    <li>
+      <%= @person.first_name + " " + @person.last_name + ": " + @pet.name%>
+    </li>
+  <% end %>
+</ul>
