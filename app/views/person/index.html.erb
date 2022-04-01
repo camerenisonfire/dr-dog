@@ -1,8 +1,2 @@
-<h1>Person</h1>
-<ul>
-  <% @persons.each do |person| %>
-    <li>
-      <%= person.first_name + " " + person.last_name %>
-    </li>
-  <% end %>
-</ul>
+<%= javascript_pack_tag 'application' %>
+<%= react_component("Person", { persons: @persons }) %>
