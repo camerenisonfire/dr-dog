@@ -10,6 +10,13 @@ bundle install
 rails webpacker:install
 rails webpacker:install:react
 ```
+
+To set up the database
+```
+rails db:migrate
+rails db:seed
+```
+
 and then start the server with
 
 ```
